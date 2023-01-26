@@ -1,5 +1,9 @@
 public class TableauVente {
     public static void main(String[] args) {
+        int[][] ventes = saisieVentes();
+        for (int i = 0; i < ventes.length; i++) {
+            System.out.println(Arrays.toString(ventes[i]));
+        }
     }
     public static int[][] saisieVentes() {
         int[][] ventes = new int[4][5];
