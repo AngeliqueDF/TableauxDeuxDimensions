@@ -7,6 +7,17 @@ public class TableauVente {
             System.out.println(Arrays.toString(ventes[i]));
         }
     }
+    public static int[] calculVentesParModele(int[][] ventes) {
+        int[] ventesParModele = new int[ventes.length];
+        for (int i = 0; i < ventes.length; i++) {
+            int total = 0;
+            for (int j = 0; j < ventes[0].length; j++) {
+                ventesParModele[i] += ventes[i][j];
+            }
+        }
+        return ventesParModele;
+    }
+
     public static int[][] saisieVentes() {
         int[][] ventes = new int[4][5];
         for (int i = 0; i < ventes.length; i++) {
