@@ -6,6 +6,10 @@ public class TableauVente {
         for (int i = 0; i < ventes.length; i++) {
             System.out.println(Arrays.toString(ventes[i]));
         }
+        int[] ventesParModele = calculVentesParModele(ventes);
+        for (int i = 0; i < ventesParModele.length; i++) {
+            System.out.println("Modèle " + (i + 1) + " : " + ventesParModele[i] + " exemplaires vendus.");
+        }
     }
     public static int[] calculVentesParModele(int[][] ventes) {
         int[] ventesParModele = new int[ventes.length];
